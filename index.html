@@ -58,7 +58,7 @@
       <section class="hero">
         <div class="container">
           <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-          <button class="modal-button" type="button" data-modal-open>Заказать услугу</button>
+          <button class="button" type="button" data-modal-open>Заказать услугу</button>
         </div>
       </section>
 
@@ -308,7 +308,7 @@
             <ul class="clients-list">
               <li class="clients-list-item">
                 <a class="clients-list-link" href="http://www.client-1.com" target="blank" rel="noreferrer noopener" aria-label="Перейти на сайт клиента 1">
-                  <svg class="clients-logo" width="44" height="46">
+                  <svg class="clients-logo" width="44" height="49">
                     <use href="./images/sprite.svg#client-1"></use>
                   </svg>
                 </a>
@@ -423,6 +423,23 @@
               </a>
             </li>
           </ul>
+        </div>
+
+        <!-- Форма подписки -->
+        <div class="footer-form-section">
+          <form action="#" class="subscription-form">
+            <label for="subscription-mail" class="subscription-form-field footer-title" name="subscription-mail">
+              подпишитесь на рассылку</label>
+            <div class="subscription-form-input-wrapper">
+              <input type="email" class="subscription-form-input" placeholder="E-mail" id="subscription-mail">
+              <button type="submit" class="subscription-form-btn button">Подписаться
+                <svg class="subscription-form-btn-icon" width="24" height="24">
+                  <use href="./images/sprite.svg#send"></use>
+                </svg>
+              </button>
+            </div>
+          </form>
+
         </div>
       </div>
     </footer>

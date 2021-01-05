@@ -56,6 +56,7 @@ img {
 /* Фоновый цвет бэкдропа rgba(0, 0, 0, 0.2) */
 /* Фоновый цвет оверлея rgba(33, 150, 243, 0.9) */
 /* Цвет бордера хєдера #ECECEC*/
+/* Цвет бордера инпут в футере rgba(255, 255, 255, 0.3) */
 /* Цвет бордера карточек #EEEEEE */
 /* Цвет иконок #AFB1B8 */
 /* Цвет иконок в футере rgba(255, 255, 255, 0.1) */
@@ -78,6 +79,7 @@ img {
   --backdrop-backgraund-color: rgba(0, 0, 0, 0.2);
   --overlay-background-color: rgba(33, 150, 243, 0.9);
   --header-border-color: #ececec;
+  --footer-input-border-color: rgba(255, 255, 255, 0.3);
   --cards-border-color: #eeeeee;
   --icons-color: #afb1b8;
   --footer-icons-color: rgba(255, 255, 255, 0.1);
@@ -146,6 +148,21 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+}
+
+.button {
+  min-width: 200px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ======= END COMPONENTS ======= */
@@ -267,6 +284,7 @@ img {
 }
 
 .contact-list {
+  width: 231px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.714;
@@ -298,6 +316,10 @@ img {
   color: var(--white-text-color);
 }
 
+.foooter-social-section {
+  margin-right: 93px;
+}
+
 .footer-social-list {
   display: flex;
 }
@@ -321,6 +343,50 @@ img {
   fill: currentColor;
 }
 
+.subscription-form-field {
+  display: block;
+}
+
+.subscription-form-input-wrapper {
+  display: flex;
+}
+
+.subscription-form-input {
+  padding-left: 16px;
+  margin-right: 12px;
+  width: 358px;
+  height: 50px;
+  border: 1px solid var(--footer-input-border-color);
+  border-radius: 4px;
+  background-color: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: 0.03em;
+  color: var(--white-text-color);
+  transition: border-color var(--transition-function);
+}
+
+.subscription-form-input:focus {
+  outline: none;
+  border-color: var(--accent-color);
+}
+
+.subscription-form-input::placeholder {
+  color: var(--footer-text-color);
+}
+
+.subscription-form-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.subscription-form-btn-icon {
+  margin-left: 10px;
+  fill: currentColor;
+}
+
 /* ======= END FOOTER ======= */
 
 /* !!!!!!!!!! INDEX.HTML !!!!!!!!!! */
@@ -328,12 +394,12 @@ img {
 /* ======= HERO ======= */
 
 .hero {
-  height: 600px;
   max-width: 1600px;
   margin: auto;
   background-color: var(--hero-background-color);
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url('../images/hero/bg-img.jpg');
   background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
 }
 
@@ -354,21 +420,6 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-text-color);
-}
-
-.modal-button {
-  min-width: 200px;
-  padding: 10px 32px;
-  border-radius: 4px;
-  border: none;
-  font-weight: 700;
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.06em;
-  color: var(--white-text-color);
-  background-color: var(--accent-color);
-  cursor: pointer;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* ======= END HERO ======= */
@@ -475,8 +526,9 @@ img {
 }
 
 .team-list-name {
-  margin-bottom: 10px;
+  font-size: 16px;
   font-weight: 500;
+  margin-bottom: 10px;
   color: var(--secondary-text-color);
 }
 
