@@ -452,6 +452,30 @@
             <use href="./images/sprite.svg#close"></use>
           </svg>
         </button>
+        <form action="#" class="modal-form">
+          <p class="modal-form-title">Оставьте свои данные, мы вам перезвоним</p>
+          <label class="modal-form-field">
+            Имя
+            <input type="text" name="user_name" class="modal-form-input">
+          </label>
+          <label class="modal-form-field">
+            Телефон
+            <input type="tel" name="user_tel" class="modal-form-input">
+          </label>
+          <label class="modal-form-field">
+            Почта
+            <input type="email" name="user_mail" class="modal-form-input">
+          </label>
+          <label class="modal-form-field">
+            Комментарий
+            <textarea name="user_message"></textarea>
+          </label>
+          <input type="checkbox" name="user_policy" value="accept-policy" class="modal-form-policy">
+          <label for="" class="modal-form-policy-text">Соглашаюсь с рассылкой и принимаю
+            <a href="https://policies.google.com/privacy?hl=ru" target="blank">
+            Условия договора</a></label>
+          <button type="button" class="modal-form-btn button">Отправить</button>
+        </form>
       </div>
     </div>
 
